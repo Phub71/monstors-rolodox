@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'proxima_novamedium';
+  src: url('./res/proximanova-medium-webfont.eot');
+  src: url('./res/proximanova-medium-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('./res/proximanova-medium-webfont.woff2') format('woff2'),
+    url('./res/proximanova-medium-webfont.woff') format('woff'),
+    url('./res/proximanova-medium-webfont.ttf') format('truetype'),
+    url('./res/proximanova-medium-webfont.svg#proxima_novamedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+.test{
+    background-color:	#E8E8E8;
+} */
+
+.tagg {
+  background-color: #a6a2dc;
+  padding: 5px;
+}
+
+.mh7-ns {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+input,
+textarea {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  padding: 7px;
+  width: 500px;
+  border-radius: 10px;
+  border: 0.5px solid #909090;
+}
+
+textarea {
+  height: 200px;
+}
+
+#submitBtn {
+  background-color: #7473bd;
+  width: 20%;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  right: -180px;
+  margin-top: 20px;
+  color: white;
+}
+#submitBtn:hover {
+  background-color: #a6a2dc;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+i{
+    font-size: 13px;
+    margin-top: 0;
+}
+
+ul.dash {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+ul.dash > li:before {
+  display: inline-block;
+  content: '|';
+  color: rgb(255, 121, 121);
+  width: 1em;
+  margin-left: -1em;
+}
+textarea,
+input {
+  outline: none;
+}
+input::placeholder .gray-placeholder {
+  color: rgb(86, 92, 152);
+}
+
+.no-decoration {
+  outline: none;
+  border: none;
+}
+
+* {
+  font-family: 'proxima_novamedium';
+}
+.netlightpurple {
+  color: rgb(116, 115, 189);
+}
+
+.bg-darkneonpurple {
+  background-color: rgb(75, 73, 202);
+}
+
+.fade-out-overflow {
+  background-image: linear-gradient(to bottom, transparent, white);
+  background-clip: text;
+}
+
+.inner-shadow {
+  -moz-box-shadow: inset 0 0 5px #bdbdbd;
+  -webkit-box-shadow: inset 0 0 5px #bdbdbd;
+  box-shadow: inset 0 0 5px #bdbdbd;
+}
+
+.backdrop {
+  z-index: -5;
+}
+
+.float-right {
+  float: right;
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.popup {
+  z-index: 9;
+}
+
+.bg-lightgray {
+  background-color: rgb(249, 249, 249);
+}
+
+.scroll {
+  overflow: scroll;
+}
+.darkneonpurple {
+  color: rgb(75, 73, 202);
+}
+.bg-navy {
+  background-color: rgb(44, 63, 107);
+}
+.navy {
+  color: rgb(44, 63, 107);
+}
+
+.darkpurple {
+  color: rgb(86, 92, 152);
+}
+
+.coral {
+  color: rgb(255, 121, 121);
+}
+
+@keyframes blink {
+  /**
+     * At the start of the animation the dot
+     * has an opacity of .2
+     */
+  0% {
+    opacity: 0.2;
+  }
+  /**
+     * At 20% the dot is fully visible and
+     * then fades out slowly
+     */
+  20% {
+    opacity: 1;
+  }
+  /**
+     * Until it reaches an opacity of .2 and
+     * the animation can start again
+     */
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.saving span {
+  /**
+     * Use the blink animation, which is defined above
+     */
+  animation-name: blink;
+  /**
+     * The animation should take 1.4 seconds
+     */
+  animation-duration: 1.4s;
+  /**
+     * It will repeat itself forever
+     */
+  animation-iteration-count: infinite;
+  /**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+  animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+  /**
+     * Starts the animation of the third dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+  animation-delay: 0.2s;
+}
+
+.saving span:nth-child(3) {
+  /**
+     * Starts the animation of the third dot
+     * with a delay of .4s, otherwise all dots
+     * would animate at the same time
+     */
+  animation-delay: 0.4s;
+}

@@ -1,0 +1,29 @@
+// import * as Article from "../src/Article"
+
+// const dummyTitle = Article.make("# Hello world")
+// test("It renders correct HTML", () => {
+//     expect(Article.toHtml(dummyTitle)).toEqual('<h1>Hello world</h1>\n')
+// }) 
+
+// const dummyArticle = Article.make(`
+// # Hello world
+
+// This is an article for intellectuals with some **bold** text.
+// `)
+
+// test("It extracts the title", () => {
+//     expect(Article.title(dummyArticle)).toBe("Hello world")
+// })
+
+// const shortTitle = Article.make(`
+// # Hello
+
+// This is an article for intellectuals with some **bold** text.
+// `)
+// const noTitle = Article.make(`
+// This is an article for intellectuals with some **bold** text. No title tho.
+// `)
+
+// test("It rextracts titles and removes those without", () => {
+//     expect(Article.titles([shortTitle,noTitle,shortTitle])).toEqual(['Hello','Hello'])
+// })
